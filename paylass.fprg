@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="paylass"/>
+        <attribute name="authors" value="RIVALDO SIAGIAN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-18 09:13:56 PM"/>
+        <attribute name="created" value="UklWQUxETyBTSUFHSUFOO1ZBTERPLVNJQUdJQU47MjAyNS0xMS0xODswODoxOToyMSBQTTszMjgx"/>
+        <attribute name="edited" value="UklWQUxETyBTSUFHSUFOO1ZBTERPLVNJQUdJQU47MjAyNS0xMS0xODswOToxMzo1NiBQTTsxOzMzOTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="deskripsi" type="String" array="True" size="10"/>
+            <declare name="kodematkul" type="String" array="True" size="10"/>
+            <declare name="namamatkul" type="String" array="True" size="10"/>
+            <declare name="dosen" type="String" array="True" size="10"/>
+            <declare name="deadline" type="String" array="True" size="10"/>
+            <declare name="keterangan" type="String" array="False" size=""/>
+            <declare name="tingkatkesulitan" type="Integer" array="True" size="10"/>
+            <declare name="harihinggadeadline" type="Integer" array="True" size="10"/>
+            <declare name="status" type="String" array="True" size="10"/>
+            <declare name="prioritas" type="Real" array="True" size="10"/>
+            <declare name="jumlahdata" type="Integer" array="False" size=""/>
+            <declare name="perintah" type="String" array="False" size=""/>
+            <assign variable="jumlahdata" expression="0"/>
+            <while expression="perintah != &quot;---&quot;">
+                <input variable="perintah"/>
+                <if expression="perintah != &quot;---&quot;">
+                    <then/>
+                    <else/>
+                </if>
+                <breakpoint expression="selesai" always="True"/>
+                <if expression="perintah == &quot;Add task&quot;">
+                    <then/>
+                    <else/>
+                </if>
+                <call expression="tambahtugas()"/>
+                <if expression="perintah == &quot;Update task status&quot;">
+                    <then/>
+                    <else/>
+                </if>
+                <call expression="UpdateStatus()"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
